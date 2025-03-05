@@ -47,8 +47,9 @@ html, body {
 #nav h4{
     font-size: 1.15vw;
     text-transform: uppercase;
-    font-weight: 500;
-    white-space : no-wrap;
+    font-weight: 500;   
+    cursor: pointer;
+    white-space: nowrap;
 }
 video{
     height: 100%;
@@ -264,14 +265,26 @@ video{
 }
 .overlay h4 {
     color: #000;
-    font-size: 40px;
-    text-transform: uppercase;
-    white-space: nowrap;
-    margin-bottom: 20px;
+    font-size: 25px;
     font-weight: 800;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+
 }
-/*   
-.card h2{
+.overlay p {
+    color: #000;
+    font-size: 18px;
+}
+/* .card:hover .overlay {
+    opacity: 1;
+} */
+.card:hover {
+    opacity: 1;
+}
+.overlay:hover {
+    transform: rotate3d(-1, 1, 0, 20deg);
+}
+.card h2 {
     color: white;
     position:  absolute;
     font-size: 45px;
@@ -280,18 +293,7 @@ video{
     margin-bottom: 20px;
     padding-left: 35px;
     padding-top: 85%;
-    z-index: 99;
-    font-family: poppins;
-    -webkit-text-stroke: 1.5px #000;
-} */
-/* .overlay h1{
-    color: black;
-    font-size: 40px;
-    text-transform: uppercase;
-    font-weight: 800;
-    white-space: no-wrap;
-    margin-bottom: 20px;
-    padding-left: 35px;
+    z-index: 99
 } */
 .overlay p {
     color: #000;
@@ -299,12 +301,14 @@ video{
 }
 .card:hover .overlay {
     opacity: 1;
+    transition: opacity 0.6s;
+    z-index: 99;
 }
-.card:hover {
+.card3:hover {
     transform: rotate3d(-1, 1, 0, 20deg);
 }
   
-#color-div{
+#color-div {
     height: 30vh;
     width: 100%;
     display: flex;
@@ -428,7 +432,7 @@ video{
     -webkit-text-stroke: 2px rgba(0, 102, 255, 0.816);
   }
   #footer {
-    height: 35vh;
+    height: 33vh;
     width: 100%;
     background: linear-gradient(to left bottom, rgba(68, 0, 255, 0.579) 0%, #2c1a9352 80%);;
     position: relative;
@@ -442,7 +446,7 @@ video{
     position: absolute;
     left: 120px;
     top: 50px;
-    height: 250px;
+    height: 180px;
     z-index: 0;
   }
   #f1 img {
