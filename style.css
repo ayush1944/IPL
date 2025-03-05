@@ -48,6 +48,7 @@ html, body {
     font-size: 1.15vw;
     text-transform: uppercase;
     font-weight: 500;
+    text : no-wrap;
 }
 video{
     height: 100%;
